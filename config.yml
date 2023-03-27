@@ -1,0 +1,9 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:latest
+    parallelism: 16
+    resource_class: xlarge
+    steps:
+      - run: ls
